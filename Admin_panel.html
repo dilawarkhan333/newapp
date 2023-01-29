@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   td{
+            border: 1px solid black;  
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <h1>Admin Profile</h1>
+    <a href="./Add_Product.html"> <button
+            style="background-color: blue; -webkit-text-fill-color: aliceblue; border-color:blue;font-size: 18px;">Add
+            Product </button></a>
+    <br>
+    <table id="product" style="border: 1px solid black; width: 100%; height: 500px; font-size: 25px; ">
+<tr>
+
+        <th style="font-size: 24px;">S.No</th>
+        <th style="font-size: 24px;">User Name</th>
+        <th style="font-size: 24px;">Price</th>
+        <th style="font-size: 24px;">Qty</th>
+        <th style="font-size: 24px;">Img </th>
+        <th style="font-size: 24px;">View</th>
+
+</tr>
+
+    </table>
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+
+    <script>
+
+const firebaseConfig = {
+    apiKey: "AIzaSyD5Hq_4thJPzNH7ivTdPYPRh_xGVA5-QhM",
+    authDomain: "firbse-asig.firebaseapp.com",
+    databaseURL: "https://firbse-asig-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "firbse-asig",
+    storageBucket: "firbse-asig.appspot.com",
+    messagingSenderId: "919135099020",
+    appId: "1:919135099020:web:10e29ecc3e9953536ec3a9"
+  };
+        firebase.initializeApp(firebaseConfig)
+
+
+
+    </script>
+    <script src="admin_product.js"></script>
+</body>
+
+</html>

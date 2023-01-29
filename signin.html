@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1  style="margin-left: 600px; font-size: 50px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"  ><b>Login</b></h1>
+    <input type="email" id="email"  placeholder="   Email"  style="margin-left: 500px;width: 350px;height: 35px;" >
+    <br>
+    <br>
+    <input type="password" id="password" placeholder="   Password" style="margin-left: 500px;width: 350px;height: 35px;" >
+    <br>
+    <br>
+    <br>
+    <input type="button"  value="Sign in" id="signin"  style="margin-left: 600px; background-color: black; border-color: black; -webkit-text-fill-color: aliceblue;">  
+    <br>
+
+<p style="margin-left: 500px;font-size: 20px;"> <b>Create Your Account : </b><a href="./index.html">Sign Up</a>
+</p>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js" ></script> 
+   <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js" ></script> 
+   <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js" ></script> 
+
+   <script>
+
+const firebaseConfig = {
+    apiKey: "AIzaSyD5Hq_4thJPzNH7ivTdPYPRh_xGVA5-QhM",
+    authDomain: "firbse-asig.firebaseapp.com",
+    databaseURL: "https://firbse-asig-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "firbse-asig",
+    storageBucket: "firbse-asig.appspot.com",
+    messagingSenderId: "919135099020",
+    appId: "1:919135099020:web:10e29ecc3e9953536ec3a9"
+  };
+
+firebase.initializeApp(firebaseConfig)
+
+    </script>
+
+
+
+
+
+<script src="./new.js" ></script>
+</body>
+</html>

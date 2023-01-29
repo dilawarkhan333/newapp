@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>assign of auth</title>
+</head>
+<body>
+    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80">
+    <h1 style="font-size: 40px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" align="center" ><b>Create account</b></h1>
+    <div class="mach">
+    
+    <input type="text" id="name" placeholder="   Name" style="width: 350px;height: 40px; ">
+    <br>
+    <br>
+    <input type="email" id="email" placeholder="   Email" style="width: 350px;height: 40px;">
+    <br>
+    <br>
+    <input type="password" name="" id="password" placeholder="   Password" style="width: 350px;height: 40px;">
+    <br>
+    <br>
+    
+    <input type="radio" value="Admin" name="user"  style="margin-left: 120px;">Admin
+    <input type="radio" value="user" name="user">User
+    <br>
+    <br>
+
+    <input type="button" value="Sign up" id="signup"  style="margin-left: 150px; background-color: black; border-color: black; -webkit-text-fill-color: aliceblue;">
+    <br>
+    <br>
+    <!-- <a href="" -->
+      <p style="font-size: 20px;" > <b>Already Account : </b> <a href="./signin.html">login </a></p>
+ <!-- <input type="button" value="Sign in" id="signin">  -->
+
+</div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script>
+
+const firebaseConfig = {
+    apiKey: "AIzaSyD5Hq_4thJPzNH7ivTdPYPRh_xGVA5-QhM",
+    authDomain: "firbse-asig.firebaseapp.com",
+    databaseURL: "https://firbse-asig-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "firbse-asig",
+    storageBucket: "firbse-asig.appspot.com",
+    messagingSenderId: "919135099020",
+    appId: "1:919135099020:web:10e29ecc3e9953536ec3a9"
+  };
+
+        firebase.initializeApp(firebaseConfig)
+
+
+
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
